@@ -17,6 +17,10 @@
 		24189625293F729D0097938B /* View + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24189624293F729D0097938B /* View + Extensions.swift */; };
 		24189628293F73810097938B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24189627293F73810097938B /* Onboarding.swift */; };
 		2418962A293F778D0097938B /* PreviewProvider + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24189629293F778D0097938B /* PreviewProvider + Extensions.swift */; };
+		2467D3FD2949BFCC0082C1B0 /* Font + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467D3FC2949BFCC0082C1B0 /* Font + Extensions.swift */; };
+		2467D4112949C45A0082C1B0 /* P22MackinacPro-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2467D4102949C45A0082C1B0 /* P22MackinacPro-ExtraBold.otf */; };
+		2467D4152949C4D50082C1B0 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467D4132949C4D50082C1B0 /* Rubik-SemiBold.ttf */; };
+		2467D4162949C4D50082C1B0 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467D4142949C4D50082C1B0 /* Rubik-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,11 @@
 		24189624293F729D0097938B /* View + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extensions.swift"; sourceTree = "<group>"; };
 		24189627293F73810097938B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		24189629293F778D0097938B /* PreviewProvider + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider + Extensions.swift"; sourceTree = "<group>"; };
+		2467D3FC2949BFCC0082C1B0 /* Font + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extensions.swift"; sourceTree = "<group>"; };
+		2467D40F2949C2E60082C1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2467D4102949C45A0082C1B0 /* P22MackinacPro-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "P22MackinacPro-ExtraBold.otf"; sourceTree = "<group>"; };
+		2467D4132949C4D50082C1B0 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		2467D4142949C4D50082C1B0 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		24189609293F6E3D0097938B /* Plant */ = {
 			isa = PBXGroup;
 			children = (
+				2467D40F2949C2E60082C1B0 /* Info.plist */,
 				24189626293F736B0097938B /* Model */,
 				24189618293F6F9C0097938B /* Flows */,
 				24189621293F72720097938B /* Core */,
@@ -111,6 +121,7 @@
 		24189621293F72720097938B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2467D3FA2949BFA50082C1B0 /* StyleSheet */,
 				24189622293F72790097938B /* Utils */,
 			);
 			path = Core;
@@ -139,6 +150,33 @@
 				24189627293F73810097938B /* Onboarding.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2467D3FA2949BFA50082C1B0 /* StyleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2467D3FB2949BFB20082C1B0 /* Fonts */,
+			);
+			path = StyleSheet;
+			sourceTree = "<group>";
+		};
+		2467D3FB2949BFB20082C1B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2467D3FC2949BFCC0082C1B0 /* Font + Extensions.swift */,
+				2467D4122949C4D50082C1B0 /* Rubik */,
+				2467D4102949C45A0082C1B0 /* P22MackinacPro-ExtraBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2467D4122949C4D50082C1B0 /* Rubik */ = {
+			isa = PBXGroup;
+			children = (
+				2467D4132949C4D50082C1B0 /* Rubik-SemiBold.ttf */,
+				2467D4142949C4D50082C1B0 /* Rubik-Regular.ttf */,
+			);
+			path = Rubik;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2467D4112949C45A0082C1B0 /* P22MackinacPro-ExtraBold.otf in Resources */,
 				24189612293F6E3E0097938B /* Preview Assets.xcassets in Resources */,
 				2418960F293F6E3E0097938B /* Assets.xcassets in Resources */,
+				2467D4162949C4D50082C1B0 /* Rubik-Regular.ttf in Resources */,
+				2467D4152949C4D50082C1B0 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +256,7 @@
 				2418962A293F778D0097938B /* PreviewProvider + Extensions.swift in Sources */,
 				2418961F293F72490097938B /* OnboardingViewView.swift in Sources */,
 				24189620293F72490097938B /* OnboardingViewViewModel.swift in Sources */,
+				2467D3FD2949BFCC0082C1B0 /* Font + Extensions.swift in Sources */,
 				24189628293F73810097938B /* Onboarding.swift in Sources */,
 				2418960D293F6E3D0097938B /* ContentView.swift in Sources */,
 				2418960B293F6E3D0097938B /* PlantApp.swift in Sources */,
@@ -350,6 +392,7 @@
 				DEVELOPMENT_TEAM = 37ACV43AZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Plant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -379,6 +422,7 @@
 				DEVELOPMENT_TEAM = 37ACV43AZV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Plant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
