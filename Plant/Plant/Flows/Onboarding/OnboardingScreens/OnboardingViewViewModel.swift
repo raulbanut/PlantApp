@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 extension OnboardingView {
     class ViewModel: ObservableObject {
@@ -14,9 +15,12 @@ extension OnboardingView {
         
         @Published var currentPage = 0 {
             didSet {
-                
+                UIHapticFeedback.generateImpact()
             }
         }
+        
+        let onShowGetNickname = PassthroughSubject<Void, Never>()
+        let onLogin = PassthroughSubject<Void, Never>()
         
         let onboardingPages: [OnboardingPage] = [
             OnboardingPage(

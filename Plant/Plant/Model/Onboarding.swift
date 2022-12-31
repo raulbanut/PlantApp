@@ -15,11 +15,11 @@ struct OnboardingPage: Identifiable, Equatable {
     }
     let index: Int
     let title: String
-    let imageName: String
+    let image: Image
     
     init(index: Int, title: String, imageName: String) {
         self.index = index
         self.title = title
-        self.imageName = imageName
+        self.image = Image(imageName)
     }
 }
